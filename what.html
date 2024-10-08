@@ -2,6 +2,26 @@
 <html>
 <head>
     <title>Geometry Dash</title>
+    <script>
+    function getFortune() {
+    const fortunes = [
+        "Astralith",
+        "Next Cab Soon",
+        "Demon Park",
+        "B",
+        "Nine Circles"
+    ];
+    
+    const randomIndex = Math.floor(Math.random() * fortunes.length);
+    
+    alert(fortunes[randomIndex]);
+}
+
+// Modify your window.onload function
+window.onload = function() {
+    playBackgroundMusic();
+};
+    </script>
     <style>
 
         body {
@@ -50,5 +70,6 @@
         <li>Acheron</li>
         <li>Silent Clubstep</li>
       </ol>
+    <button onclick="getFortune()">Next Demon</button>
 </body>
 </html>
