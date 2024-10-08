@@ -2,6 +2,20 @@
 <html>
 <head>
     <title>My GitHub Pages Website</title>
+    <script>
+        // Function to change the background color
+        function changeBackgroundColor() {
+            const colors = ["#000000, #ffffff"];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+        
+        // Add event listeners when the page loads
+        window.onload = function() {
+              changeBackgroundColor();
+            displayWelcomeMessage("GD players (jobless teens) only!!!");
+        };
+    </script>
     <style>
         body {
             font-family: Garamond, serif;
@@ -25,10 +39,12 @@
             font-size: 30px;
             line-height: 1;
         }
+        h2 { color: #000000;}
     </style>
 </head>
 <body>
     <h1>Welcome to My Website</h1>
     <p>I am going to beat a difficult level in Geometry Dash soon (hopefully) <br> <a href="what.html">More info on Geometry Dash</a></p>
+    <h2>If you see this message you're a nerd</h2>
 </body>
 </html>
